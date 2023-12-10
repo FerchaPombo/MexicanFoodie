@@ -25,7 +25,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get("SECRET_KEY")
+SECRET_KEY = '25072009fbp'
 #'django-insecure-wp7d!pc$)@!*%n$j%e(rycz%hzim)0tsay%b)y$05&fk#^z6&5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -33,6 +33,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['8000-ferchapombo-mexicanfood-4378ysyqqwo.ws-eu106.gitpod.io']
 ALLOWED_HOSTS = ['mexicanfoodie.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['8000-ferchapombo-mexicanfood-irff6ge0dly.ws-eu106.gitpod.io']
+ALLOWED_HOSTS = ['8000-ferchapombo-mexicanfood-irff6ge0dly.ws-eu106.gitpod.io']
 
 
 
@@ -91,6 +93,7 @@ WSGI_APPLICATION = 'mexicanfoodfeeling.wsgi.application'
 #        'NAME': BASE_DIR / 'db.sqlite3',
 #    }
 #}
+
 DATABASES = {
     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
@@ -130,10 +133,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = 'static/'
-STATICFILES_STORAGE = 'cloudinary_storage.storageStaticHashedCloudinaryStorage'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-STATIC_ROOT = os.path.join.join(BASE_DIR, 'staticfiles')
+STATIC_URL = '/static/'
+STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
+#STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
+#STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MEDIA_URL = '/media/'
 DEFAUTL_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
