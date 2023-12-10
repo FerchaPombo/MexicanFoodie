@@ -146,3 +146,10 @@ DEFAUTL_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'dwnq0iw7c',
+    'API_KEY': '782253955156693',
+    'API_SECRET': '1kpz9tatZXSquN8WxSWR1xU4Vno',
+
+}
